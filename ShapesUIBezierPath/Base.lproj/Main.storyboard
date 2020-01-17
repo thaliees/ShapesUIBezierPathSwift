@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShapesUIBezierPath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZM-17-La1" customClass="ShapeView" customModule="ShapesUIBezierPath" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="382" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZt-Td-hny">
+                                <rect key="frame" x="16" y="60" width="42" height="30"/>
+                                <state key="normal" title="Ticket"/>
+                                <connections>
+                                    <action selector="ticketAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgy-kZ-UwH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK0-1M-2Uy">
+                                <rect key="frame" x="66" y="60" width="35" height="30"/>
+                                <state key="normal" title="Mark"/>
+                                <connections>
+                                    <action selector="markAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFk-2S-byY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV8-LE-Jtt">
+                                <rect key="frame" x="109" y="60" width="53" height="30"/>
+                                <state key="normal" title="Rosette"/>
+                                <connections>
+                                    <action selector="rosetteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8j8-Da-pch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuN-rE-B74">
+                                <rect key="frame" x="170" y="60" width="64" height="30"/>
+                                <state key="normal" title="Pie Chart"/>
+                                <connections>
+                                    <action selector="pieChartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0xB-nW-6y9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZA-1c-6wA">
+                                <rect key="frame" x="242" y="60" width="43" height="30"/>
+                                <state key="normal" title="Beizer"/>
+                                <connections>
+                                    <action selector="bellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAA-nk-mLo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yZA-1c-6wA" firstAttribute="leading" secondItem="kuN-rE-B74" secondAttribute="trailing" constant="8" id="1CH-RT-EkT"/>
+                            <constraint firstItem="IK0-1M-2Uy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="BUl-oJ-Uvb"/>
+                            <constraint firstItem="qZM-17-La1" firstAttribute="top" secondItem="LZt-Td-hny" secondAttribute="bottom" constant="20" id="Bv9-nY-SE1"/>
+                            <constraint firstItem="qZM-17-La1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CCQ-xF-1gR"/>
+                            <constraint firstItem="LZt-Td-hny" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Caz-fv-WJM"/>
+                            <constraint firstItem="kuN-rE-B74" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="DJ1-C3-KqQ"/>
+                            <constraint firstItem="LZt-Td-hny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IVb-G3-nIR"/>
+                            <constraint firstItem="IK0-1M-2Uy" firstAttribute="leading" secondItem="LZt-Td-hny" secondAttribute="trailing" constant="8" id="Jth-zk-VAL"/>
+                            <constraint firstItem="yZA-1c-6wA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Qnb-MU-ze9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZM-17-La1" secondAttribute="trailing" constant="16" id="Rba-bj-XyI"/>
+                            <constraint firstItem="kuN-rE-B74" firstAttribute="leading" secondItem="rV8-LE-Jtt" secondAttribute="trailing" constant="8" id="WRN-dz-OIW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qZM-17-La1" secondAttribute="bottom" constant="16" id="dyC-t3-7ZJ"/>
+                            <constraint firstItem="rV8-LE-Jtt" firstAttribute="leading" secondItem="IK0-1M-2Uy" secondAttribute="trailing" constant="8" id="vEP-rN-Hrm"/>
+                            <constraint firstItem="rV8-LE-Jtt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ytt-br-kGV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewShape" destination="qZM-17-La1" id="mff-Ew-dQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+</document>
