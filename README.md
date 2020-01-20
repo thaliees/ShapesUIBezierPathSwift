@@ -1,4 +1,4 @@
-## Shapes with UIBeizierPath
+## Shapes with UIBezierPath
 [Project created with Xcode V11.3.1]
 
 ## Project Base.
